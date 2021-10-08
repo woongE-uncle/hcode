@@ -1,0 +1,5 @@
+.main_container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: minmax(50px,70px) 1fr;
+}
