@@ -1,6 +1,12 @@
 // *{
 //     border: 1px solid black;
 // }
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
 .nav_container{
     display: grid;
     grid-template-columns: 7fr 3fr;
