@@ -1,8 +1,9 @@
 import express from "express";
 import routes from "../routers";
 
-const router = express.Router();
+const userRouter = express.Router();
 
-router.get(routes.home,(req,res)=>{res.render("home")});
+userRouter.get(routes.home,(req,res)=>res.render('home'));
+userRouter.get(routes.login,(req,res)=>res.render('login'));
 
-export default router;
+export default userRouter;

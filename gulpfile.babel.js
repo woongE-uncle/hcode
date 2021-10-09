@@ -11,12 +11,12 @@ sass.compiler = require("node-sass");
 
 const routes = {
   css: {
-    watch: "src/scss/*",
+    watch: "src/scss/**/*.scss",
     src: "src/scss/styles.scss",
     dest: "dist/css"
   },
   js:{
-    watch: "src/js/*",
+    watch: "src/js/**/*.js",
     src: "src/js/main.js",
     dest: "dist/js"
   }

@@ -1,0 +1,34 @@
+.home_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    .home_header_box{
+        width: 100%;
+        height: 100%;
+        .home_img_box{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                background-color: white;
+            }
+        }
+    }
+    .home_content_box{
+        width: 100%;
+        height: 100%;
+        
+        .home_text_box{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .home_text{
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+}

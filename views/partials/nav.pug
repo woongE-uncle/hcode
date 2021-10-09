@@ -1,17 +1,18 @@
 .nav_container 
     .nav_menu_container
-        .nav_menu 
-            span home
-        .nav_menu 
-            span directions
-        .nav_menu 
-            span portpolio
+        .nav_menu_box
+            .nav_menu 
+                a(href=`${routes.home}`)  Home
+            .nav_menu 
+                a(href=`${routes.data}${routes.map}`)  Map
+            .nav_menu 
+                a(href=`${routes.data}${routes.popol}`)  Portpolio
     .nav_login_container 
         .nav_toggle
-            i.fas.fa-ellipsis-v
-            .nav_dropdown
-                .nav_notification
-                    span 관리자 메뉴
-                .nav_login 
-                    a(href="")  
-                        span login 
+            .nav_icon_box
+                i.fas.fa-ellipsis-v
+            .nav_dropdown_box
+                .nav_dropdown.hidden  
+                    .nav_login 
+                        a(href=`${routes.login}`)  
+                            span login 

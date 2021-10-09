@@ -7,12 +7,18 @@ const LOGOUT = "/logout";
 const JOIN = "/join";
 const USERDETAIL = "/:id";
 
-//bbs
-const BBS = "/bbs";
+//data
+const DATA = "/data";
+
+//dsta-map
+const MAP ="/map";
+
+//data-bbs
+const POPOL = "/popol";
 const WRITE = "/write";
 const UPDATE = "/update";
 const DELETE = "/delete";
-const BBSDETAIL = "/:id";
+const POPOLDETAIL = "/:id";
 
 //other data
 const DIRECTIONS = "/directions";
@@ -24,13 +30,13 @@ const routes = {
     logout:LOGOUT,
     join:JOIN,
     userdetail:USERDETAIL,
-    bbs:BBS,
+    data:DATA,
+    map:MAP,
+    popol:POPOL,
     write:WRITE,
     update:UPDATE,
     delete:DELETE,
-    bbsDetail:BBSDETAIL
-
-
+    bbsDetail:POPOLDETAIL
 }
 
 export default routes;

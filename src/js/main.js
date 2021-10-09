@@ -1,1 +1,1 @@
-import "./nav";
+import "./partials/nav";

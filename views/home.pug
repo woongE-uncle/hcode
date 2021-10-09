@@ -2,4 +2,22 @@ extends layout/main
 
 block content 
     .home_container 
-        span home page
+        .home_header_box 
+            #carouselExampleControls.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                    .carousel-item.active
+                    img.d-block.w-100(src='img/1' alt='First slide')
+                    .carousel-item
+                    img.d-block.w-100(src='img/2' alt='Second slide')
+                    .carousel-item
+                    img.d-block.w-100(src='/src/img/3' alt='Third slide')
+                a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+        .home_content_box
+            .home_text_box 
+                p.home_text 아무리 약한 사람이라도 단 하나의 목적에 자신의 온 힘을 집중시킴으로써 무엇인가 성취할 수 있지만,
+                p.home_text 아무리 강한 사람이라도 힘을 많은 목적에 분산하면 어떤 것도 성취할 수 없다.
