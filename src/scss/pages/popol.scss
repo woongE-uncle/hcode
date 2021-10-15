@@ -1,0 +1,12 @@
+.popol_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .popol_box{
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 40px;
+    }
+}

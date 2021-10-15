@@ -8,11 +8,15 @@
             .nav_menu 
                 a(href=`${routes.data}${routes.popol}`)  Portpolio
     .nav_login_container 
-        .nav_toggle
-            .nav_icon_box
-                i.fas.fa-ellipsis-v
-            .nav_dropdown_box
-                .nav_dropdown.hidden  
-                    .nav_login 
-                        a(href=`${routes.login}`)  
-                            span login 
+        .dropdown
+            button#dropdownMenuButton1.btn.btn-secondary.dropdown-toggle(type='button' data-bs-toggle='dropdown' aria-expanded='false')
+                
+            ul.dropdown-menu(aria-labelledby='dropdownMenuButton1')
+                li
+                    a.dropdown-item(href=`${routes.login}`) Login
+                li 
+                    a.dropdown-item(href=`${routes.user}${routes.userDetail}`) UserDetail
+                li 
+                    a.dropdown-item(href=`${routes.data}${routes.write}`) Write
+                
+

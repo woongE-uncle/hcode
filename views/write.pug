@@ -1,4 +1,13 @@
 extends layout/main
 
 block content 
-    span write page
+    .write_container 
+        form(action=`${routes.data}${routes.write}`, method="post", enctype="application/x-www-form-urlencoded").write_form 
+            .write_box_title 
+                input(type="text",name="title",size="30",placeholder="제목")
+            .write_box_content
+                textarea(name="content",cols="150",rows="50",placeholder="텍스트") 
+            .write_box_main_img 
+                input(type="text",name="mainImg",size="30", placeholder="대표이미지")
+            .write_box_submit 
+                button(type="submit") Upload

@@ -5,7 +5,7 @@ const USER = "/user";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const JOIN = "/join";
-const USERDETAIL = "/:id";
+const USERDETAIL = "/detail";
 
 //data
 const DATA = "/data";
@@ -29,14 +29,20 @@ const routes = {
     login:LOGIN,
     logout:LOGOUT,
     join:JOIN,
-    userdetail:USERDETAIL,
+    userDetail:USERDETAIL,
     data:DATA,
     map:MAP,
     popol:POPOL,
     write:WRITE,
     update:UPDATE,
     delete:DELETE,
-    bbsDetail:POPOLDETAIL
+    popolDetail(id){
+        if(id){
+            return `/${id}`;
+        }else{
+            return POPOLDETAIL;
+        }
+    }
 }
 
 export default routes;

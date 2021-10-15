@@ -3,6 +3,10 @@
     width: 100%;
     display: grid;
     grid-template-rows: minmax(50px,70px) 1fr 70px;
+    row-gap: 20px;
     box-sizing: border-box;
-    background-color: #f5487f;
+    background-color: white;
+    .content_container{
+        padding: 0 20px;
+    }
 }

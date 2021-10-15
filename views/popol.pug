@@ -1,0 +1,12 @@
+extends layout/main
+include mixins/popolBlock
+
+block content 
+    .popol_container 
+        .popol_box
+            if result
+                each popol in result
+                    +popolBlock({
+                        id: popol.popol_id,
+                        img: '/src/img/1.png'
+                    })

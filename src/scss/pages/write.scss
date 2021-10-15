@@ -1,0 +1,34 @@
+.write_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .write_form{
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .write_box_title{
+            width: 1144px;
+            margin-bottom: 20px;
+            input{
+                width: 100%;
+                font-size: 30px;
+                border: 4px solid black;
+            }
+        }
+        .write_box_content{
+            margin-bottom: 20px;
+            textarea{
+                border: 4px solid black;
+            }
+        }
+        .write_box_main_img{
+            width: 1144px;
+            input{
+                width: 100%;
+                font-size: 30px;
+                border: 4px solid black;
+            }
+        }
+    }
+}

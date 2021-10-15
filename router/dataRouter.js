@@ -1,10 +1,15 @@
 import express from "express";
-import routes from "../routers";
+import { getWrite, map, popol, popolDetail, postWrite} from "../controller/dataController";
+import routes from "../router";
 
 const dataRouter = express.Router();
 
-dataRouter.get(routes.map,(req,res)=>res.render('map'));
-dataRouter.get(routes.popol,(req,res)=>res.render('portpolio'));
-dataRouter.get(routes.write,(req,res)=>res.render('write'));
+dataRouter.get(routes.map,map);
+dataRouter.get(routes.popol,popol);
+
+dataRouter.get(routes.write,getWrite);
+dataRouter.post(routes.write,postWrite);
+
+dataRouter.get(routes.popolDetail(),popolDetail);
 
 export default dataRouter;

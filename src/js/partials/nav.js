@@ -19,4 +19,4 @@ const init = () =>{
     navIconBox.addEventListener("click",dropDownMenu);
 }
 
-init();
+// init();
