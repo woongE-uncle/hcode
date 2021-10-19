@@ -4,7 +4,7 @@
   "description": "create website",
   "main": "inits.js",
   "scripts": {
-    "start": "nodemon --exec babel-node inits.js",
+    "start": "nodemon --exec babel-node web.js",
     "dev": "gulp dev"
   },
   "author": "jinhyeok",
