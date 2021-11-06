@@ -1,4 +1,14 @@
 extends layout/main
 
 block content 
-    span login page
+    .login_container 
+        .login_img_box 
+            img(src="#", alt="").login_img 
+        form(action=`${routes.user}${routes.login}`,method="post").login_form 
+            .login_email
+                input(type="text",name="email",placeholder="Email")
+            .login_password
+                input(type="password",name="password",placeholder="Password")
+            .login_submit
+                input(type="submit",value="LOGIN")
+        

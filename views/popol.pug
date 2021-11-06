@@ -1,12 +1,22 @@
 extends layout/main
 include mixins/popolBlock
 
+
 block content 
-    .popol_container 
-        .popol_box
-            if result
-                each popol in result
-                    +popolBlock({
-                        id: popol.popol_id,
-                        img: '/src/img/1.png'
-                    })
+        .popol_container
+            .popol_title_box 
+                .img_box 
+                    img(src="/src/img/taeung1.jpeg")
+                .content_box
+                    p 웅이삼촌이 만든 Hcode interior website
+            .popol_content_box
+                if result 
+                    each popol in result
+                        +popolBlock({
+                            id:popol.popol_id,
+                            title:popol.popol_title,
+                            img:popol.main_img
+                        })
+                    
+                    
+                

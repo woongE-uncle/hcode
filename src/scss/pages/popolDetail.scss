@@ -1,0 +1,70 @@
+div{
+    // border: 1px solid white;
+}
+.popol_detail_container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    .title_box{
+        grid-column: 2/5;
+        grid-row-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    .content_box{
+        grid-column: 2/5;
+        grid-row-start: 2;
+        display: flex;
+        flex-direction: column  ;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 50px;
+        margin-top: 10px;
+        font-size: 30px;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+    .button_box{
+        grid-column: 2/5;
+        grid-row-start: 3;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        height: 100%;
+        margin-top: 10px;
+        p{
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+        .edit_box{
+            grid-column: 1/2;
+            display: flex;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            
+        }
+        .delete_box{
+            grid-column: 4/5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            input{
+                background-color: black;
+                color: white;
+                border-style: none;
+                font-size: 30px;
+            }
+        }
+    }
+}

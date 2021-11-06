@@ -1,7 +1,8 @@
 mixin popolBlock(popol={})
-    .popolBlock 
-        a(href=`${routes.data}${routes.popolDetail(popol.id)}`) 
-            img(src=`${popol.img}`)
-            //- p.popol_block_id=popol.id
-            //- p.popol_block_title=popol.title
-            //- p.popol_block_date=popol.date
+    a(href=`${routes.data}${routes.popolDetail(popol.id)}`).content_box  
+        .img_box
+            img(src=`/uploads/${popol.img}`, alt="") 
+        .title 
+            p=popol.title        
+               
+            

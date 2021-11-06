@@ -1,3 +1,3 @@
 import app from "./app";
 
-app.listen('8001',()=>console.log("connecting..."));   
+app.listen('4000',()=>console.log("connecting..."));   

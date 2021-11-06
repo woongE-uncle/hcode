@@ -5,15 +5,11 @@
     a{
         height: 100%;
         width: 100%;
-        img{
-            width: 100%;
+        text-decoration: none;
+        .img_box{
+            img{
+                width: 100%;
+            }
         }
-        // p{
-        //     height: 100%;
-        //     border: 1px solid black;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        // }
     }
 }

@@ -1,0 +1,11 @@
+extends layout/main
+
+block content 
+    .popol_edit_container 
+        form(action=`${routes.data}${routes.popolEdit(data.popol_id)}`, method="post", enctype="multipart/form-data").write_form 
+            input.write_box_title(type="text",name="title",size="30",value=`${data.popol_title}`)
+            textarea.write_box_content(name="content",cols="150",rows="50")=data.popol_content 
+            label 파일 선택
+                input.write_box_main_img(type="file",name="mainImg",accept="image/*",onchange="javascript:document.getElementById('file_text').value=this.value")
+            input(type="text", id="file_text",readonly, value=`${data.main_img}`)
+            button.write_box_submit(type="submit") Upload

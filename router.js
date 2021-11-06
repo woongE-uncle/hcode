@@ -18,7 +18,9 @@ const POPOL = "/popol";
 const WRITE = "/write";
 const UPDATE = "/update";
 const DELETE = "/delete";
-const POPOLDETAIL = "/:id";
+const POPOLDETAIL = "/popol/:id";
+const POPOLEDIT = "/popol/:id/edit";
+const POPOLDELTE ="/popol/:id/delete";
 
 //other data
 const DIRECTIONS = "/directions";
@@ -38,9 +40,23 @@ const routes = {
     delete:DELETE,
     popolDetail(id){
         if(id){
-            return `/${id}`;
+            return `/popol/${id}`;
         }else{
             return POPOLDETAIL;
+        }
+    },
+    popolEdit(id){
+        if(id){
+            return `/popol/${id}/edit`;
+        }else{
+            return POPOLEDIT;
+        }
+    },
+    popolDelete(id){
+        if(id){
+            return `/popol/${id}/delete`;
+        }else{
+            return POPOLDELTE;
         }
     }
 }

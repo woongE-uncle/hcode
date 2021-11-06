@@ -1,4 +1,15 @@
 extends layout/main
 
-block content 
-    span portpolio detail
+block content    
+    .popol_detail_container 
+        .title_box 
+            p=data.popol_title
+        .content_box
+            if popolContent 
+                each p in popolContent 
+                    p=p
+        .button_box
+            a.edit_box(href=`${routes.data}${routes.popolEdit(data.popol_id)}`) 
+                p edit
+            form.delete_box(action=`${routes.data}${routes.popolDelete(data.popol_id)}`,method="post")
+                input(type="submit", value="delete") 

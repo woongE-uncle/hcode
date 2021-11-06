@@ -10,25 +10,40 @@
         .write_box_title{
             width: 1144px;
             margin-bottom: 20px;
-            input{
-                width: 100%;
-                font-size: 30px;
-                border: 4px solid black;
-            }
+            border-radius: 5px;
+            border-style: none;
+            text-align: center;
         }
         .write_box_content{
+            width: 1144px;
             margin-bottom: 20px;
-            textarea{
-                border: 4px solid black;
+            border-radius: 5px;
+            border-style: none;
+        }
+        label{
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            &:hover{
+                cursor: pointer;
+            }
+            .write_box_main_img{
+                display: none;
             }
         }
-        .write_box_main_img{
+        #file_text{
             width: 1144px;
-            input{
-                width: 100%;
-                font-size: 30px;
-                border: 4px solid black;
-            }
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .write_box_submit{
+            background-color: white;
+            padding: 10px 28px;
+            border-radius: 10px;
+            color: black;
+            border-style: none;
         }
     }
 }
